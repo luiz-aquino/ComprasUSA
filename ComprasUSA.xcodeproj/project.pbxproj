@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		8C67B5751F84ED00002B7265 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8C67B5731F84ED00002B7265 /* Model.xcdatamodeld */; };
+		8CA785FA1F8922FD0049A48A /* CartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA785F91F8922FD0049A48A /* CartTableViewController.swift */; };
+		8CA785FD1F892A760049A48A /* UIViewController+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA785FC1F892A750049A48A /* UIViewController+CoreData.swift */; };
+		8CA786051F897A210049A48A /* ProductItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA786041F897A210049A48A /* ProductItemTableViewCell.swift */; };
 		8CA886941F817D2D008BB892 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA886931F817D2D008BB892 /* AppDelegate.swift */; };
-		8CA886961F817D2D008BB892 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA886951F817D2D008BB892 /* ViewController.swift */; };
 		8CA886991F817D2D008BB892 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CA886971F817D2D008BB892 /* Main.storyboard */; };
 		8CA8869B1F817D2D008BB892 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CA8869A1F817D2D008BB892 /* Assets.xcassets */; };
 		8CA8869E1F817D2D008BB892 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CA8869C1F817D2D008BB892 /* LaunchScreen.storyboard */; };
@@ -17,9 +19,11 @@
 
 /* Begin PBXFileReference section */
 		8C67B5741F84ED00002B7265 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		8CA785F91F8922FD0049A48A /* CartTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewController.swift; sourceTree = "<group>"; };
+		8CA785FC1F892A750049A48A /* UIViewController+CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+CoreData.swift"; sourceTree = "<group>"; };
+		8CA786041F897A210049A48A /* ProductItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductItemTableViewCell.swift; sourceTree = "<group>"; };
 		8CA886901F817D2D008BB892 /* ComprasUSA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ComprasUSA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CA886931F817D2D008BB892 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8CA886951F817D2D008BB892 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8CA886981F817D2D008BB892 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8CA8869A1F817D2D008BB892 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CA8869D1F817D2D008BB892 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +41,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8CA785F81F8922290049A48A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8CA786041F897A210049A48A /* ProductItemTableViewCell.swift */,
+				8CA785F91F8922FD0049A48A /* CartTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8CA785FB1F89291B0049A48A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8CA785FC1F892A750049A48A /* UIViewController+CoreData.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		8CA886871F817D2D008BB892 = {
 			isa = PBXGroup;
 			children = (
@@ -56,8 +77,9 @@
 		8CA886921F817D2D008BB892 /* ComprasUSA */ = {
 			isa = PBXGroup;
 			children = (
+				8CA785FB1F89291B0049A48A /* Extensions */,
+				8CA785F81F8922290049A48A /* Controllers */,
 				8CA886931F817D2D008BB892 /* AppDelegate.swift */,
-				8CA886951F817D2D008BB892 /* ViewController.swift */,
 				8CA886971F817D2D008BB892 /* Main.storyboard */,
 				8C67B5731F84ED00002B7265 /* Model.xcdatamodeld */,
 				8CA8869A1F817D2D008BB892 /* Assets.xcassets */,
@@ -139,8 +161,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CA886961F817D2D008BB892 /* ViewController.swift in Sources */,
 				8CA886941F817D2D008BB892 /* AppDelegate.swift in Sources */,
+				8CA785FD1F892A760049A48A /* UIViewController+CoreData.swift in Sources */,
+				8CA786051F897A210049A48A /* ProductItemTableViewCell.swift in Sources */,
+				8CA785FA1F8922FD0049A48A /* CartTableViewController.swift in Sources */,
 				8C67B5751F84ED00002B7265 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
