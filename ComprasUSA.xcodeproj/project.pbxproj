@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C188E2B1F90094500CFC9A0 /* RegisterProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C188E2A1F90094500CFC9A0 /* RegisterProductViewController.swift */; };
+		8C188E2D1F9088D300CFC9A0 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C188E2C1F9088D300CFC9A0 /* SettingsViewController.swift */; };
 		8C67B5751F84ED00002B7265 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8C67B5731F84ED00002B7265 /* Model.xcdatamodeld */; };
 		8CA785FA1F8922FD0049A48A /* CartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA785F91F8922FD0049A48A /* CartTableViewController.swift */; };
 		8CA785FD1F892A760049A48A /* UIViewController+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA785FC1F892A750049A48A /* UIViewController+CoreData.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8C188E2A1F90094500CFC9A0 /* RegisterProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterProductViewController.swift; sourceTree = "<group>"; };
+		8C188E2C1F9088D300CFC9A0 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		8C67B5741F84ED00002B7265 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		8CA785F91F8922FD0049A48A /* CartTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewController.swift; sourceTree = "<group>"; };
 		8CA785FC1F892A750049A48A /* UIViewController+CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+CoreData.swift"; sourceTree = "<group>"; };
@@ -46,6 +50,8 @@
 			children = (
 				8CA786041F897A210049A48A /* ProductItemTableViewCell.swift */,
 				8CA785F91F8922FD0049A48A /* CartTableViewController.swift */,
+				8C188E2A1F90094500CFC9A0 /* RegisterProductViewController.swift */,
+				8C188E2C1F9088D300CFC9A0 /* SettingsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -163,9 +169,11 @@
 			files = (
 				8CA886941F817D2D008BB892 /* AppDelegate.swift in Sources */,
 				8CA785FD1F892A760049A48A /* UIViewController+CoreData.swift in Sources */,
+				8C188E2D1F9088D300CFC9A0 /* SettingsViewController.swift in Sources */,
 				8CA786051F897A210049A48A /* ProductItemTableViewCell.swift in Sources */,
 				8CA785FA1F8922FD0049A48A /* CartTableViewController.swift in Sources */,
 				8C67B5751F84ED00002B7265 /* Model.xcdatamodeld in Sources */,
+				8C188E2B1F90094500CFC9A0 /* RegisterProductViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

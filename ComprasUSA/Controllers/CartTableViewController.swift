@@ -16,7 +16,11 @@ class CartTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        tableView.estimatedRowHeight = 96
+        tableView.rowHeight = UITableViewAutomaticDimension
+        label.text = "Sem Produtos"
+        label.textAlignment = .center
+        
         loadProdutcts()
     }
 
@@ -78,8 +82,7 @@ class CartTableViewController: UITableViewController {
 
         return cell
     }
- 
-
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -88,17 +91,22 @@ class CartTableViewController: UITableViewController {
     }
     */
 
-    /*
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
+            let product = fetchedResultController.object(at: indexPath)
+            context.delete(product)
+            do {
+                try context.save()
+                tableView.deleteRows(at: [indexPath], with: .fade)
+            } catch {
+                print(error.localizedDescription)
+            }
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
-    */
 
     /*
     // Override to support rearranging the table view.
