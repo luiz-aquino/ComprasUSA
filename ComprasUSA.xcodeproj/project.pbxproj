@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8C188E2B1F90094500CFC9A0 /* RegisterProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C188E2A1F90094500CFC9A0 /* RegisterProductViewController.swift */; };
 		8C188E2D1F9088D300CFC9A0 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C188E2C1F9088D300CFC9A0 /* SettingsViewController.swift */; };
+		8C60468F1F928C7E007A82B8 /* StateItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C60468E1F928C7E007A82B8 /* StateItemTableViewCell.swift */; };
 		8C67B5751F84ED00002B7265 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8C67B5731F84ED00002B7265 /* Model.xcdatamodeld */; };
 		8CA785FA1F8922FD0049A48A /* CartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA785F91F8922FD0049A48A /* CartTableViewController.swift */; };
 		8CA785FD1F892A760049A48A /* UIViewController+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA785FC1F892A750049A48A /* UIViewController+CoreData.swift */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		8C188E2A1F90094500CFC9A0 /* RegisterProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterProductViewController.swift; sourceTree = "<group>"; };
 		8C188E2C1F9088D300CFC9A0 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		8C60468E1F928C7E007A82B8 /* StateItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateItemTableViewCell.swift; sourceTree = "<group>"; };
 		8C67B5741F84ED00002B7265 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		8CA785F91F8922FD0049A48A /* CartTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewController.swift; sourceTree = "<group>"; };
 		8CA785FC1F892A750049A48A /* UIViewController+CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+CoreData.swift"; sourceTree = "<group>"; };
@@ -45,12 +47,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8CA785F81F8922290049A48A /* Controllers */ = {
+		8C6046901F928D51007A82B8 /* Product */ = {
 			isa = PBXGroup;
 			children = (
 				8CA786041F897A210049A48A /* ProductItemTableViewCell.swift */,
 				8CA785F91F8922FD0049A48A /* CartTableViewController.swift */,
 				8C188E2A1F90094500CFC9A0 /* RegisterProductViewController.swift */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		8C6046911F928D7C007A82B8 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				8C60468E1F928C7E007A82B8 /* StateItemTableViewCell.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		8CA785F81F8922290049A48A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8C6046911F928D7C007A82B8 /* State */,
+				8C6046901F928D51007A82B8 /* Product */,
 				8C188E2C1F9088D300CFC9A0 /* SettingsViewController.swift */,
 			);
 			path = Controllers;
@@ -169,6 +188,7 @@
 			files = (
 				8CA886941F817D2D008BB892 /* AppDelegate.swift in Sources */,
 				8CA785FD1F892A760049A48A /* UIViewController+CoreData.swift in Sources */,
+				8C60468F1F928C7E007A82B8 /* StateItemTableViewCell.swift in Sources */,
 				8C188E2D1F9088D300CFC9A0 /* SettingsViewController.swift in Sources */,
 				8CA786051F897A210049A48A /* ProductItemTableViewCell.swift in Sources */,
 				8CA785FA1F8922FD0049A48A /* CartTableViewController.swift in Sources */,

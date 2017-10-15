@@ -59,6 +59,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="dollarChanged:" destination="j8J-DI-kgX" eventType="editingDidEnd" id="JJE-wo-zCD"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.00" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="28q-Ri-raz">
                                 <rect key="frame" x="214" y="127" width="96" height="30"/>
@@ -68,9 +71,12 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="iofChanged:" destination="j8J-DI-kgX" eventType="editingDidEnd" id="k5J-WI-yRS"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cotação do dólar (R$):" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qnt-ke-ush">
-                                <rect key="frame" x="10" y="87" width="194" height="21"/>
+                                <rect key="frame" x="10" y="82" width="194" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="Zxm-k7-m32"/>
                                 </constraints>
@@ -79,7 +85,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IOF (%):" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="95V-TO-toq">
-                                <rect key="frame" x="10" y="132" width="194" height="21"/>
+                                <rect key="frame" x="10" y="127" width="194" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="nye-7t-glD"/>
                                 </constraints>
@@ -88,7 +94,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Impostos por estado" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ofw-3i-aOO">
-                                <rect key="frame" x="10" y="163" width="300" height="21"/>
+                                <rect key="frame" x="10" y="158" width="300" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="u26-Tw-MgR"/>
                                 </constraints>
@@ -102,12 +108,20 @@
                                     <constraint firstAttribute="height" constant="30" id="Rob-zJ-UYK"/>
                                 </constraints>
                                 <state key="normal" title="Adicionar estado"/>
+                                <connections>
+                                    <action selector="add:" destination="j8J-DI-kgX" eventType="touchUpInside" id="GKk-Vz-Blr"/>
+                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RTn-eR-JMv">
-                                <rect key="frame" x="0.0" y="194" width="320" height="275"/>
+                                <rect key="frame" x="0.0" y="189" width="320" height="280"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="7Oq-1a-M8E">
+                                    <rect key="frame" x="0.0" y="72" width="320" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="stateCell" id="8Xc-V9-QKl">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="stateCell" id="8Xc-V9-QKl" customClass="StateItemTableViewCell" customModule="ComprasUSA" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8Xc-V9-QKl" id="SIa-lO-U7u">
@@ -138,6 +152,10 @@
                                                 <constraint firstAttribute="trailingMargin" secondItem="OVm-vA-cyD" secondAttribute="trailing" constant="10" id="uQx-oy-ZXL"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lbName" destination="OZ5-ad-4wV" id="RGb-70-CaL"/>
+                                            <outlet property="lbPrice" destination="OVm-vA-cyD" id="DJM-M8-Jg2"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -147,7 +165,7 @@
                             <constraint firstAttribute="trailing" secondItem="ofw-3i-aOO" secondAttribute="trailing" constant="10" id="0EI-0n-eRH"/>
                             <constraint firstItem="MbU-JZ-y43" firstAttribute="width" secondItem="G7I-2V-kOo" secondAttribute="width" multiplier="0.3" id="0Jm-1F-IrZ"/>
                             <constraint firstAttribute="trailing" secondItem="G8t-3Z-Dd4" secondAttribute="trailing" constant="10" id="0cS-hM-Tq2"/>
-                            <constraint firstItem="qnt-ke-ush" firstAttribute="top" secondItem="r72-9v-UsY" secondAttribute="bottom" constant="23" id="0cq-q0-aJY"/>
+                            <constraint firstItem="qnt-ke-ush" firstAttribute="top" secondItem="r72-9v-UsY" secondAttribute="bottom" constant="18" id="0cq-q0-aJY"/>
                             <constraint firstItem="28q-Ri-raz" firstAttribute="top" secondItem="MbU-JZ-y43" secondAttribute="bottom" constant="15" id="4CI-Fl-k5C"/>
                             <constraint firstItem="RTn-eR-JMv" firstAttribute="top" secondItem="ofw-3i-aOO" secondAttribute="bottom" constant="10" id="4qG-UR-JBa"/>
                             <constraint firstItem="28q-Ri-raz" firstAttribute="leading" secondItem="95V-TO-toq" secondAttribute="trailing" constant="10" id="6kY-fL-iOn"/>
@@ -168,6 +186,11 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Ajustes" image="gears" selectedImage="gears" id="Vn0-6n-fCh"/>
+                    <connections>
+                        <outlet property="tableView" destination="RTn-eR-JMv" id="qJM-zh-rnh"/>
+                        <outlet property="tfDollar" destination="MbU-JZ-y43" id="kqa-Nd-mad"/>
+                        <outlet property="tfIOF" destination="28q-Ri-raz" id="nSC-V5-i67"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uVZ-Ac-Kit" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -9,7 +9,7 @@
     </entity>
     <entity name="State" representedClassName="State" syncable="YES" codeGenerationType="class">
         <attribute name="name" attributeType="String" syncable="YES"/>
-        <attribute name="tax" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="tax" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <relationship name="products" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Product" inverseName="state" inverseEntity="Product" syncable="YES"/>
     </entity>
     <elements>
