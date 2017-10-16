@@ -16,14 +16,20 @@ class CartTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.estimatedRowHeight = 96
         tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 96
         label.text = "Sem Produtos"
         label.textAlignment = .center
         
         loadProdutcts()
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? RegisterProductViewController, let indexPath = tableView.indexPathForSelectedRow {
+            vc.product = fetchedResultController.object(at: indexPath)
+        }
+    }
+    
     func loadProdutcts() {
         let fetchRequest: NSFetchRequest<Product> = Product.fetchRequest()
         
@@ -72,25 +78,21 @@ class CartTableViewController: UITableViewController {
         
         cell.lblName.text = product.name
         
-        if let price = product.price {
-            cell.lblPrice.text = "$ \(price)"
-        }
+        cell.lblPrice.text = "$ \(String(format: "%.2f", product.price))"
         
         if let stateName = product.state?.name {
             cell.lblState.text = stateName
         }
 
+        if let image = product.picture as? UIImage {
+            cell.ivProduct.image = image
+        }
+        
+        cell.lblCreditCard.text = product.usedCreaditCard ? "Cartão" : ""
+        
         return cell
     }
     
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
@@ -99,7 +101,7 @@ class CartTableViewController: UITableViewController {
             context.delete(product)
             do {
                 try context.save()
-                tableView.deleteRows(at: [indexPath], with: .fade)
+                loadProdutcts()
             } catch {
                 print(error.localizedDescription)
             }
@@ -107,31 +109,6 @@ class CartTableViewController: UITableViewController {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
 
