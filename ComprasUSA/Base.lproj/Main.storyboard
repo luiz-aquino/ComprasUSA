@@ -77,6 +77,10 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Total da Compra" image="suitcase" selectedImage="suitcase" id="ZJN-EE-ogt"/>
+                    <connections>
+                        <outlet property="lbTotalDollar" destination="U95-8Q-9LH" id="jIF-iZ-ptV"/>
+                        <outlet property="lbTotalReais" destination="mOR-bv-5O2" id="Fvy-we-OO9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yBt-ZY-zTe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

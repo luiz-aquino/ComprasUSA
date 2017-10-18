@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8C188E2B1F90094500CFC9A0 /* RegisterProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C188E2A1F90094500CFC9A0 /* RegisterProductViewController.swift */; };
 		8C188E2D1F9088D300CFC9A0 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C188E2C1F9088D300CFC9A0 /* SettingsViewController.swift */; };
+		8C524F7A1F970606001C71EE /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8C524F791F970606001C71EE /* Settings.bundle */; };
 		8C5F9AB61F9459AD0028A79D /* TotalCompraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5F9AB51F9459AD0028A79D /* TotalCompraViewController.swift */; };
 		8C60468F1F928C7E007A82B8 /* StateItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C60468E1F928C7E007A82B8 /* StateItemTableViewCell.swift */; };
 		8C67B5751F84ED00002B7265 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8C67B5731F84ED00002B7265 /* Model.xcdatamodeld */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		8C188E2A1F90094500CFC9A0 /* RegisterProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterProductViewController.swift; sourceTree = "<group>"; };
 		8C188E2C1F9088D300CFC9A0 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		8C524F791F970606001C71EE /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		8C5F9AB51F9459AD0028A79D /* TotalCompraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalCompraViewController.swift; sourceTree = "<group>"; };
 		8C60468E1F928C7E007A82B8 /* StateItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateItemTableViewCell.swift; sourceTree = "<group>"; };
 		8C67B5741F84ED00002B7265 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				8CA785F81F8922290049A48A /* Controllers */,
 				8CA886931F817D2D008BB892 /* AppDelegate.swift */,
 				8CA886971F817D2D008BB892 /* Main.storyboard */,
+				8C524F791F970606001C71EE /* Settings.bundle */,
 				8C67B5731F84ED00002B7265 /* Model.xcdatamodeld */,
 				8CA8869A1F817D2D008BB892 /* Assets.xcassets */,
 				8CA8869C1F817D2D008BB892 /* LaunchScreen.storyboard */,
@@ -176,6 +179,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C524F7A1F970606001C71EE /* Settings.bundle in Resources */,
 				8CA8869E1F817D2D008BB892 /* LaunchScreen.storyboard in Resources */,
 				8CA8869B1F817D2D008BB892 /* Assets.xcassets in Resources */,
 				8CA886991F817D2D008BB892 /* Main.storyboard in Resources */,

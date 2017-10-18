@@ -123,6 +123,7 @@ class SettingsViewController: UIViewController {
 
 extension SettingsViewController: NSFetchedResultsControllerDelegate {
     func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
+        print("change")
         tableView.reloadData()
     }
 }

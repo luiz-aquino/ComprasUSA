@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>StringsTable</key>
+	<string>Root</string>
+	<key>PreferenceSpecifiers</key>
+	<array>
+		<dict>
+			<key>Title</key>
+			<string>IOF</string>
+			<key>Key</key>
+			<string>iof</string>
+			<key>KeyboardType</key>
+			<string>NumbersAndPunctuation</string>
+			<key>DefaultValue</key>
+			<string>0</string>
+			<key>Type</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>Cotação do dollar</string>
+			<key>Key</key>
+			<string>dollar</string>
+			<key>KeyboardType</key>
+			<string>NumbersAndPunctuation</string>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>Default Value</key>
+			<string>0</string>
+		</dict>
+	</array>
+</dict>
+</plist>
