@@ -92,21 +92,42 @@ class RegisterProductViewController: UIViewController {
     
     @IBAction func save(_ sender: UIButton) {
         product = product ?? Product(context: context)
-        if let name = tfName.text {
+        var errorMessage: String = ""
+        
+        if let name = tfName.text, name.count > 0 {
             product.name = name
+        }
+        else {
+            errorMessage += "Nome do Produto é obrigatório \n"
         }
         
         if let value = tfPrice.text, let dValue = Double(value) {
             product.price = dValue
+        }
+        else {
+            errorMessage += "Preço é valor numérico obrigatório \n"
         }
         
         product.usedCreaditCard = spCreditCard.isOn
         if currentState != nil {
             product.state = currentState
         }
+        else {
+            errorMessage += "Estado é obrigatório \n"
+        }
             
         if smallImage != nil {
             product.picture = smallImage
+        }
+        else {
+            errorMessage += "A imagem do produto é obrigatória"
+        }
+        
+        if errorMessage.count > 1 {
+            let alert = UIAlertController(title: "Atenção", message: errorMessage, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
+            present(alert, animated: true, completion: nil)
+            return
         }
         
         do {

@@ -34,6 +34,7 @@ class TotalCompraViewController: UIViewController {
         
         do {
             try fetchedResultController.performFetch()
+            calculateTotal()
         } catch {
             print(error.localizedDescription)
         }
@@ -43,22 +44,24 @@ class TotalCompraViewController: UIViewController {
         print("calculateTotal")
         if let objects = fetchedResultController.fetchedObjects {
             print("objects")
+            var dollarNoTaxPrice = 0.0
             var dollarResult = 0.0;
             let dollarPrice = UserDefaults.standard.double(forKey: "dollar")
             let iof = UserDefaults.standard.double(forKey: "iof")
             for product in objects {
                 var productTotal = product.price
+                dollarNoTaxPrice += product.price
                 if let state = product.state {
-                    productTotal *= state.tax
+                    productTotal *= ((state.tax / 100) + 1)
                 }
                 if product.usedCreaditCard {
-                    productTotal *= iof
+                    productTotal *= ((iof / 100) + 1)
                 }
                 dollarResult += productTotal
             }
             let brlResult = dollarResult * dollarPrice
             lbTotalReais.text = String(format: "%.2f", brlResult)
-            lbTotalDollar.text = String(format: "%.2f", dollarResult)
+            lbTotalDollar.text = String(format: "%.2f", dollarNoTaxPrice)
         }
     }
     
@@ -67,8 +70,7 @@ class TotalCompraViewController: UIViewController {
     }
 }
 
-extension TotalCompraViewController: NSFetchedResultsControllerDelegate {
-    
+extension TotalCompraViewController: NSFetchedResultsControllerDelegate {   
     
     func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
         print("didChangeContent")
