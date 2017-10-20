@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ComprasUSA/Controllers/SettingsViewController.swift"
+            timestampString = "530159340.934143"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ComprasUSA.SettingsViewController.__deallocating_deinit"
+                  moduleName = "ComprasUSA"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luizaquino/ComprasUSA/ComprasUSA/Controllers/SettingsViewController.swift"
+                  timestampString = "529710537.04762"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ComprasUSA.SettingsViewController.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; ComprasUSA.SettingsViewController"
+                  moduleName = "ComprasUSA"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luizaquino/ComprasUSA/ComprasUSA/Controllers/SettingsViewController.swift"
+                  timestampString = "529710537.053291"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ComprasUSA.SettingsViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; ComprasUSA.SettingsViewController"
+                  moduleName = "ComprasUSA"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luizaquino/ComprasUSA/ComprasUSA/Controllers/SettingsViewController.swift"
+                  timestampString = "529710537.059778"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "77">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ComprasUSA.SettingsViewController.__allocating_init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;ComprasUSA.SettingsViewController&gt;"
+                  moduleName = "ComprasUSA"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luizaquino/ComprasUSA/ComprasUSA/Controllers/SettingsViewController.swift"
+                  timestampString = "529710537.065016"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ComprasUSA.SettingsViewController.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;ComprasUSA.SettingsViewController&gt;"
+                  moduleName = "ComprasUSA"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luizaquino/ComprasUSA/ComprasUSA/Controllers/SettingsViewController.swift"
+                  timestampString = "529710537.070129"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "47">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ComprasUSA/Controllers/SettingsViewController.swift"
+            timestampString = "530159340.93527"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
+            landmarkName = "showDialog(type:state:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #3 (__ObjC.UIAlertAction) -&gt; () in ComprasUSA.SettingsViewController.showDialog(type: ComprasUSA.CategoryType, state: Swift.Optional&lt;ComprasUSA.State&gt;) -&gt; ()"
+                  moduleName = "ComprasUSA"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luizaquino/ComprasUSA/ComprasUSA/Controllers/SettingsViewController.swift"
+                  timestampString = "529727076.684261"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78"
+                  offsetFromSymbolStart = "37">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "implicit closure #1 : @autoclosure () throws -&gt; ComprasUSA.State in closure #3 (__ObjC.UIAlertAction) -&gt; () in ComprasUSA.SettingsViewController.showDialog(type: ComprasUSA.CategoryType, state: Swift.Optional&lt;ComprasUSA.State&gt;) -&gt; ()"
+                  moduleName = "ComprasUSA"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luizaquino/ComprasUSA/ComprasUSA/Controllers/SettingsViewController.swift"
+                  timestampString = "529727076.691942"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78"
+                  offsetFromSymbolStart = "14">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ComprasUSA/Controllers/SettingsViewController.swift"
+            timestampString = "530159340.936174"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "dollarChanged(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ComprasUSA/Controllers/SettingsViewController.swift"
+            timestampString = "530159340.937062"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "173"
+            endingLineNumber = "173"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ComprasUSA/Controllers/TotalCompraViewController.swift"
+            timestampString = "530159340.937961"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "7"
+            endingLineNumber = "7"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
