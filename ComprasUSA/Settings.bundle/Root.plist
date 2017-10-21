@@ -7,28 +7,30 @@
 	<key>PreferenceSpecifiers</key>
 	<array>
 		<dict>
-			<key>Title</key>
-			<string>IOF</string>
-			<key>Key</key>
-			<string>iof</string>
-			<key>KeyboardType</key>
-			<string>NumbersAndPunctuation</string>
-			<key>DefaultValue</key>
-			<string>0</string>
 			<key>Type</key>
-			<integer>0</integer>
+			<string>PSGroupSpecifier</string>
+			<key>Title</key>
+			<string>Group</string>
 		</dict>
 		<dict>
+			<key>Type</key>
+			<string>PSTextFieldSpecifier</string>
 			<key>Title</key>
-			<string>Cotação do dollar</string>
+			<string>Cotação do dolár</string>
 			<key>Key</key>
 			<string>dollar</string>
 			<key>KeyboardType</key>
-			<string>NumbersAndPunctuation</string>
+			<string>NumberPad</string>
+		</dict>
+		<dict>
 			<key>Type</key>
-			<integer>0</integer>
-			<key>Default Value</key>
-			<string>0</string>
+			<string>PSTextFieldSpecifier</string>
+			<key>Title</key>
+			<string>I.O.F (%)</string>
+			<key>Key</key>
+			<string>iof</string>
+			<key>KeyboardType</key>
+			<string>NumberPad</string>
 		</dict>
 	</array>
 </dict>
