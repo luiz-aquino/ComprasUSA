@@ -51,10 +51,10 @@ class TotalCompraViewController: UIViewController {
             for product in objects {
                 var productTotal = product.price
                 dollarNoTaxPrice += product.price
-                if let state = product.state {
+                if let state = product.state, state.tax != 0 {
                     productTotal *= ((state.tax / 100) + 1)
                 }
-                if product.usedCreaditCard {
+                if product.usedCreaditCard && iof != 0 {
                     productTotal *= ((iof / 100) + 1)
                 }
                 dollarResult += productTotal

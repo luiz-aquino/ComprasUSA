@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ComprasUSA/Controllers/SettingsViewController.swift"
-            timestampString = "530159340.934143"
+            timestampString = "530305301.345108"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "15"
@@ -103,11 +103,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ComprasUSA/Controllers/SettingsViewController.swift"
-            timestampString = "530159340.93527"
+            timestampString = "530305301.347609"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "100"
-            endingLineNumber = "100"
+            startingLineNumber = "142"
+            endingLineNumber = "142"
             landmarkName = "showDialog(type:state:)"
             landmarkType = "7">
             <Locations>
@@ -119,12 +119,12 @@
                   moduleName = "ComprasUSA"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/luizaquino/ComprasUSA/ComprasUSA/Controllers/SettingsViewController.swift"
-                  timestampString = "529727076.684261"
+                  timestampString = "530291961.538057"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "78"
-                  endingLineNumber = "78"
-                  offsetFromSymbolStart = "37">
+                  startingLineNumber = "100"
+                  endingLineNumber = "100"
+                  offsetFromSymbolStart = "40">
                </Location>
                <Location
                   shouldBeEnabled = "No"
@@ -134,11 +134,11 @@
                   moduleName = "ComprasUSA"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/luizaquino/ComprasUSA/ComprasUSA/Controllers/SettingsViewController.swift"
-                  timestampString = "529727076.691942"
+                  timestampString = "530291961.545125"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "78"
-                  endingLineNumber = "78"
+                  startingLineNumber = "100"
+                  endingLineNumber = "100"
                   offsetFromSymbolStart = "14">
                </Location>
             </Locations>
@@ -151,11 +151,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ComprasUSA/Controllers/SettingsViewController.swift"
-            timestampString = "530159340.936174"
+            timestampString = "530305301.349835"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
             landmarkName = "dollarChanged(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -167,13 +167,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ComprasUSA/Controllers/SettingsViewController.swift"
-            timestampString = "530159340.937062"
+            timestampString = "530305301.352046"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "173"
-            endingLineNumber = "173"
-            landmarkName = "tableView(_:cellForRowAt:)"
-            landmarkType = "7">
+            startingLineNumber = "235"
+            endingLineNumber = "235"
+            landmarkName = "SettingsViewController"
+            landmarkType = "21">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -183,13 +183,29 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ComprasUSA/Controllers/TotalCompraViewController.swift"
-            timestampString = "530159340.937961"
+            timestampString = "530305301.3542"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "7"
             endingLineNumber = "7"
             landmarkName = "unknown"
             landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ComprasUSA/Controllers/SettingsViewController.swift"
+            timestampString = "530305301.354368"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "144"
+            endingLineNumber = "144"
+            landmarkName = "showDialog(type:state:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

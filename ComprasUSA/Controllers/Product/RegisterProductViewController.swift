@@ -101,7 +101,7 @@ class RegisterProductViewController: UIViewController {
             errorMessage += "Nome do Produto é obrigatório \n"
         }
         
-        if let value = tfPrice.text, let dValue = Double(value) {
+        if let value = tfPrice.text, let dValue = Double(value), dValue >= 0 {
             product.price = dValue
         }
         else {
@@ -127,6 +127,7 @@ class RegisterProductViewController: UIViewController {
             let alert = UIAlertController(title: "Atenção", message: errorMessage, preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
             present(alert, animated: true, completion: nil)
+            context.undo()
             return
         }
         
@@ -151,7 +152,7 @@ class RegisterProductViewController: UIViewController {
     }
     
     @IBAction func selectImage(_ sender: UIButton) {
-        let alert = UIAlertController(title: "Selecionar a imagem", message: "De onde você quer escolher imagem?", preferredStyle: .actionSheet)
+        let alert = UIAlertController(title: "Selecionar poster", message: "De onde você quer escolher o poster?", preferredStyle: .actionSheet)
         
         if UIImagePickerController.isSourceTypeAvailable(.camera) {
             let cameraAction = UIAlertAction(title: "Câmera", style: .default, handler: { (action: UIAlertAction) in
@@ -165,10 +166,10 @@ class RegisterProductViewController: UIViewController {
         }
         alert.addAction(libraryAction)
         
-        let photosAction = UIAlertAction(title: "Álbum de fotos", style: .default) { (action: UIAlertAction) in
-            self.setNewImage(sourceType: .savedPhotosAlbum)
-        }
-        alert.addAction(photosAction)
+//        let photosAction = UIAlertAction(title: "Álbum de fotos", style: .default) { (action: UIAlertAction) in
+//            self.setNewImage(sourceType: .savedPhotosAlbum)
+//        }
+//        alert.addAction(photosAction)
         
         let cancelAction = UIAlertAction(title: "Cancelar", style: .cancel, handler: nil)
         alert.addAction(cancelAction)

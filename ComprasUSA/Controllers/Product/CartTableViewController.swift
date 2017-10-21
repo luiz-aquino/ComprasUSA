@@ -18,7 +18,7 @@ class CartTableViewController: UITableViewController {
         super.viewDidLoad()
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 96
-        label.text = "Sem Produtos"
+        label.text = "Sua lista está vazia!"
         label.textAlignment = .center
         
         loadProdutcts()
